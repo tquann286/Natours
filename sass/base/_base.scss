@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Set rem instead of px by default font size to 10px */
+  /* font-size: 10px; 10/16 = 0.625 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-gray-dark;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+

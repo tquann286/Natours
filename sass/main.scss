@@ -6,82 +6,20 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #2bb4b5;
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-$color-gray-dark: #777;
-$color-white: #fff;
-$color-black: #000;
+@import 'components/button';
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
+@import 'pages/home';
 
-  75% {
-    transform: translateX(0.8rem);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  75% {
-    transform: translateX(-0.8rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  /* Set rem instead of px by default font size to 10px */
-  /* font-size: 10px; 10/16 = 0.625 */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  color: $color-gray-dark;
-  padding: 3rem;
-  box-sizing: border-box;
-}
 
 .header {
   position: relative;
